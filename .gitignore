@@ -1,0 +1,12 @@
+cnf/cache/
+
+/.gradle/
+/.metadata/
+/.recommenders/
+
+*/bin/
+*/bin_test/
+*/generated/
+*/reports/
+
+RemoteSystemsTempFiles

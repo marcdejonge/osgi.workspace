@@ -1,0 +1,17 @@
+-plugin:\
+	aQute.bnd.deployer.repository.LocalIndexedRepo; \
+        name=Release Repo; \
+        local=${workspace}/cnf/release; \
+        pretty=false, \
+	aQute.bnd.jpm.Repository; \
+        includeStaged=true; \
+        name='JPM'; \
+        location=${workspace}/cnf/cache/jpm; \
+        index=${workspace}/cnf/jpm.json; \
+        depository.group=bndtools; \
+        depository.name=dist \
+
+-releaserepo: Release Repo
+-baseline: *
+-baselinerepo: Release Repo
+ 

@@ -1,0 +1,15 @@
+# Force Java 8
+javac.source:          1.8
+javac.target:          1.8
+
+# License stuff (Apache 2) and attribution
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0
+Bundle-Copyright: Copyright 2016 Marc de Jonge
+Include-Resource: ../cnf/LICENSE.txt
+Bundle-Vendor: marcdejonge.com
+Bundle-Developers: Marc de Jonge (marcdejonge@gmail.com)
+
+# The git descriptors (doesn't seem to work on my windows machine for now)
+#Git-Descriptor:       ${system-allow-fail;git describe --dirty --always}
+#Git-SHA:              ${system-allow-fail;git rev-list -1 HEAD}
+#-diffignore:          Git-Descriptor,Git-SHA

@@ -1,5 +1,6 @@
 [submodule "release"]
 path = cnf/release
+url = https://github.com/marcdejonge/releases.git
 
 [submodule "com.marcdejonge.codec"]
 path = com.marcdejonge.codec

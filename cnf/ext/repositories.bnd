@@ -7,11 +7,10 @@
         includeStaged=true; \
         name='JPM'; \
         location=${workspace}/cnf/cache/jpm; \
-        index=${workspace}/cnf/jpm.json; \
-        depository.group=bndtools; \
-        depository.name=dist \
+        index=${workspace}/cnf/jpm.json;
 
 -releaserepo: Release Repo
+
 -baseline: *
 -baselinerepo: Release Repo
  

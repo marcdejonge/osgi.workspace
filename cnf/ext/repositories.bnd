@@ -1,13 +1,21 @@
+bnd-release	=	https://bndtools.ci.cloudbees.com/job/bnd.master/lastSuccessfulBuild/artifact/dist/bundles
+
+-pluginpath:\
+	${build}/cache/biz.aQute.repository-latest.jar;url=${bnd-release}/biz.aQute.repository/biz.aQute.repository-latest.jar
+
 -plugin:\
 	aQute.bnd.deployer.repository.LocalIndexedRepo; \
         name=Release Repo; \
         local=${workspace}/cnf/release; \
         pretty=false, \
 	aQute.bnd.jpm.Repository; \
-        includeStaged=true; \
+        trace=true; \
         name='JPM'; \
         location=${workspace}/cnf/cache/jpm; \
-        index=${workspace}/cnf/jpm.json;
+        index=${workspace}/cnf/jpm.json, \
+	aQute.bnd.deployer.repository.wrapper.Plugin; \
+		location="${build}/cache/jpm"; \
+		reindex=true, \
 
 -releaserepo: Release Repo
 

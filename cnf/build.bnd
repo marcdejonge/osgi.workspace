@@ -9,7 +9,10 @@ Include-Resource: ../cnf/LICENSE.txt
 Bundle-Vendor: marcdejonge.com
 Bundle-Developers: Marc de Jonge (marcdejonge@gmail.com)
 
+-exportcontents: ${packages;ANNOTATED;org.osgi.annotation.versioning.Version}
+
 # The git descriptors (doesn't seem to work on my windows machine for now)
 #Git-Descriptor:       ${system-allow-fail;git describe --dirty --always}
 #Git-SHA:              ${system-allow-fail;git rev-list -1 HEAD}
 #-diffignore:          Git-Descriptor,Git-SHA
+buildid: ${tstamp;yyyy-MM-dd-HHmm}

@@ -9,3 +9,6 @@ url = git@github.com:marcdejonge/com.marcdejonge.codec.git
 [submodule "com.marcdejonge.web.core"]
 path = com.marcdejonge.web.core
 url = git@github.com:marcdejonge/com.marcdejonge.web.core.git
+[submodule "com.marcdejonge.theme"]
+	path = com.marcdejonge.theme
+	url = git@github.com:marcdejonge/com.marcdejonge.theme.git

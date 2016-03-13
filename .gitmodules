@@ -1,14 +1,18 @@
 [submodule "release"]
 path = cnf/release
 url = https://github.com/marcdejonge/releases.git
-
 [submodule "com.marcdejonge.codec"]
 path = com.marcdejonge.codec
 url = git@github.com:marcdejonge/com.marcdejonge.codec.git
-
 [submodule "com.marcdejonge.web.core"]
 path = com.marcdejonge.web.core
 url = git@github.com:marcdejonge/com.marcdejonge.web.core.git
 [submodule "com.marcdejonge.theme"]
-	path = com.marcdejonge.theme
-	url = git@github.com:marcdejonge/com.marcdejonge.theme.git
+path = com.marcdejonge.theme
+url = git@github.com:marcdejonge/com.marcdejonge.theme.git
+[submodule "com.marcdejonge.ipad.simulator"]
+path = com.marcdejonge.ipad.simulator
+url = git@github.com:marcdejonge/com.marcdejonge.ipad.simulator.git
+[submodule "com.marcdejonge.website"]
+path = com.marcdejonge.website
+url = git@github.com:marcdejonge/com.marcdejonge.website
